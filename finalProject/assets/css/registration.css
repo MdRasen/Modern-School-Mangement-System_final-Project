@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.registration-page {
+    background-color: #2B2D33;
+    /* padding-bottom: 8px; */
+}
+
+label {
+    color: #ccc;
+}
+
+h3 {
+    text-align: center;
+    color: #ccc;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 6px 12px;
+    margin: 4px 0;
+    /* display: inline-block; */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+a,
+button {
+    background-color: #41535D;
+    color: white;
+    padding: 6px 12px;
+    margin: 4px 0;
+    border: none;
+    width: 100%;
+    text-decoration: none;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.8;
+    /* background-color: red; */
+}
+
+.error,
+.uError,
+.nError,
+.eError,
+.pError,
+.dError,
+.aError,
+.passError,
+.cpassError {
+    text-align: right;
+    color: red;
+    font-size: 14px;
+}

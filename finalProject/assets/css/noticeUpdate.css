@@ -1,0 +1,91 @@
+body {
+    background-color: #2B2D33;
+}
+
+.top-section{
+    background-color: #2C3E50;
+    margin: 0%;
+}
+
+.logo-title{
+    color: #B8C6CC;
+    width: 65%;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.logo-title a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-title a:hover{
+    color: red;
+}
+
+.welcome{
+    font-size: 22px;
+    color: white;
+}
+
+.welcome a{
+    text-decoration: none;
+    color: #008080;
+}
+
+.welcome a:hover{
+    color: red;
+}
+
+.top-menu{
+    padding-left: 20px;
+}
+
+.top-menu a{
+    text-decoration: none;
+    color: #008080;
+    font-size: 21px;
+}
+
+.top-menu a:hover{
+    color: red;   
+}
+
+.notice-update{
+    padding-top: 25px;
+}
+
+legend, label{
+    color: #ccc;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 6px 12px;
+    margin: 4px 0;
+    /* display: inline-block; */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.submit {
+    background-color: #41535D;
+    color: white;
+    padding: 6px 12px;
+    margin: 4px 0;
+    border: none;
+    width: 100%;
+    text-decoration: none;
+}
+
+.submit:hover {
+    opacity: 0.8;
+    /* background-color: red; */
+}
+
+.error {
+    text-align: right;
+    color: red;
+    font-size: 14px;
+}

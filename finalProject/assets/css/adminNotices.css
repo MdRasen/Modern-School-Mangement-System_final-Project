@@ -1,0 +1,87 @@
+body {
+    background-color: #2B2D33;
+}
+
+.top-section {
+    background-color: #2C3E50;
+    margin: 0%;
+}
+
+.logo-title {
+    color: #B8C6CC;
+    width: 65%;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.logo-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-title a:hover {
+    color: red;
+}
+
+.welcome {
+    font-size: 22px;
+    color: white;
+}
+
+.welcome a {
+    text-decoration: none;
+    color: #008080;
+}
+
+.welcome a:hover {
+    color: red;
+}
+
+.top-menu {
+    padding-left: 20px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #008080;
+    font-size: 21px;
+}
+
+.top-menu a:hover {
+    color: red;
+}
+
+.left-menu {
+    width: 25%;
+    padding: 10px;
+    padding-left: 22px;
+}
+
+.left-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #B8C6CC;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.left-menu a:hover {
+    color: red;
+}
+
+.notice-table {
+    width: 1000px;
+    text-align: center;
+}
+
+.notice-table th {
+    text-align: center;
+    padding: 8px;
+    color: white;
+}
+
+.notice-table td {
+    text-align: center;
+    padding: 8px;
+    color: #B8C6CC;
+}

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login-page {
+    background-color: #2B2D33;
+    padding-bottom: 129px;
+}
+
+.container {
+    padding: 15px;
+}
+
+label {
+    color: #ccc;
+}
+
+h2 {
+    text-align: center;
+    color: #ccc;
+    padding-top: 128px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+a,
+button {
+    background-color: #41535D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+    text-decoration: none;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.8;
+}
+
+.uError,
+.pError,
+.error {
+    text-align: right;
+    color: red;
+    font-size: 14px;
+}

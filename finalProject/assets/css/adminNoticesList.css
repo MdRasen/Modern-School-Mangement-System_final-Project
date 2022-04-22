@@ -1,0 +1,92 @@
+body {
+    background-color: #2B2D33;
+}
+
+legend,
+label {
+    color: #ccc;
+}
+
+#txtHint {
+    color: #ccc;
+}
+
+.class-search {
+    padding-top: 10px;
+}
+
+input {
+    width: 30%;
+    background-color: #ccc;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.top-section {
+    background-color: #2C3E50;
+    margin: 0%;
+}
+
+.logo-title {
+    color: #B8C6CC;
+    width: 65%;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.logo-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-title a:hover {
+    color: red;
+}
+
+.welcome {
+    font-size: 22px;
+    color: white;
+}
+
+.welcome a {
+    text-decoration: none;
+    color: #008080;
+}
+
+.welcome a:hover {
+    color: red;
+}
+
+.top-menu {
+    padding-left: 20px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #008080;
+    font-size: 21px;
+}
+
+.top-menu a:hover {
+    color: red;
+}
+
+.notice-table {
+    width: 100%;
+    text-align: center;
+}
+
+.notice-table th {
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.notice-table td {
+    text-align: center;
+    padding: 5px;
+    color: #B8C6CC;
+}

@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Apr 22, 2022 at 09:01 AM
+- Server version: 10.4.22-MariaDB
+- PHP Version: 8.1.1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="webtech" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="class_routine">
+                CREATE TABLE `class_routine` (
+                  `class_id` varchar(12) NOT NULL,
+                  `class` varchar(15) NOT NULL,
+                  `section` varchar(15) NOT NULL,
+                  `file_name` varchar(15) NOT NULL,
+                  PRIMARY KEY (`class_id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="class_sections">
+                CREATE TABLE `class_sections` (
+                  `class_id` varchar(15) NOT NULL,
+                  `class` varchar(15) NOT NULL,
+                  `section` varchar(15) NOT NULL,
+                  `room` varchar(12) NOT NULL,
+                  `teacher` varchar(30) NOT NULL,
+                  `teacher_phone` varchar(11) NOT NULL,
+                  `teacher_email` varchar(30) NOT NULL,
+                  PRIMARY KEY (`class_id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="notices">
+                CREATE TABLE `notices` (
+                  `notice_id` varchar(15) NOT NULL,
+                  `notice_title` varchar(40) NOT NULL,
+                  `recipient` varchar(15) NOT NULL,
+                  `date` date NOT NULL,
+                  `notice` varchar(200) NOT NULL,
+                  PRIMARY KEY (`notice_id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="profile_details">
+                CREATE TABLE `profile_details` (
+                  `username` varchar(30) NOT NULL,
+                  `file_name` varchar(30) NOT NULL,
+                  PRIMARY KEY (`username`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `users` varchar(15) NOT NULL,
+                  `username` varchar(20) NOT NULL,
+                  `name` varchar(30) NOT NULL,
+                  `email` varchar(30) NOT NULL,
+                  `phone` varchar(11) NOT NULL,
+                  `dob` date NOT NULL,
+                  `gender` varchar(8) NOT NULL,
+                  `address` varchar(40) NOT NULL,
+                  `password` varchar(15) NOT NULL,
+                  `cpassword` varchar(15) NOT NULL,
+                  `status` varchar(20) NOT NULL,
+                  PRIMARY KEY (`username`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'webtech'
+    -->
+    <database name="webtech">
+        <!-- Table class_routine -->
+        <table name="class_routine">
+            <column name="class_id">abcde</column>
+            <column name="class">01</column>
+            <column name="section">A</column>
+            <column name="file_name">finaltermexamsc</column>
+        </table>
+        <table name="class_routine">
+            <column name="class_id">ONE01</column>
+            <column name="class">01</column>
+            <column name="section">A</column>
+            <column name="file_name">routine01A</column>
+        </table>
+        <table name="class_routine">
+            <column name="class_id">ONE02</column>
+            <column name="class">01</column>
+            <column name="section">B</column>
+            <column name="file_name">routine01B</column>
+        </table>
+        <table name="class_routine">
+            <column name="class_id">ONE03</column>
+            <column name="class">01</column>
+            <column name="section">C</column>
+            <column name="file_name">routine01C</column>
+        </table>
+        <table name="class_routine">
+            <column name="class_id">TWO01</column>
+            <column name="class">02</column>
+            <column name="section">A</column>
+            <column name="file_name">routine02A</column>
+        </table>
+        <table name="class_routine">
+            <column name="class_id">TWO02</column>
+            <column name="class">02</column>
+            <column name="section">B</column>
+            <column name="file_name">routine02B</column>
+        </table>
+        <table name="class_routine">
+            <column name="class_id">TWO03</column>
+            <column name="class">02</column>
+            <column name="section">C</column>
+            <column name="file_name">webtech-admin.x</column>
+        </table>
+        <!-- Table class_sections -->
+        <table name="class_sections">
+            <column name="class_id">ONE01</column>
+            <column name="class">01</column>
+            <column name="section">A</column>
+            <column name="room">1001</column>
+            <column name="teacher">MdRasen</column>
+            <column name="teacher_phone">01630406235</column>
+            <column name="teacher_email">aamin.h@gmail.com</column>
+        </table>
+        <table name="class_sections">
+            <column name="class_id">ONE02</column>
+            <column name="class">01</column>
+            <column name="section">B</column>
+            <column name="room">1002</column>
+            <column name="teacher">Fahim Ahmed</column>
+            <column name="teacher_phone">12345678901</column>
+            <column name="teacher_email">fahim@gmail.com</column>
+        </table>
+        <table name="class_sections">
+            <column name="class_id">ONE03</column>
+            <column name="class">01</column>
+            <column name="section">C</column>
+            <column name="room">1003</column>
+            <column name="teacher">Arif Sadi</column>
+            <column name="teacher_phone">45127898653</column>
+            <column name="teacher_email">sadi@gmail.com</column>
+        </table>
+        <table name="class_sections">
+            <column name="class_id">THREE01</column>
+            <column name="class">03</column>
+            <column name="section">A</column>
+            <column name="room">3001</column>
+            <column name="teacher">Anisul Islam</column>
+            <column name="teacher_phone">12345678901</column>
+            <column name="teacher_email">anisul@yahoo.com</column>
+        </table>
+        <table name="class_sections">
+            <column name="class_id">TWO01</column>
+            <column name="class">02</column>
+            <column name="section">A</column>
+            <column name="room">2001</column>
+            <column name="teacher">Rasel Kabir</column>
+            <column name="teacher_phone">12345678901</column>
+            <column name="teacher_email">rasel@gmail.com</column>
+        </table>
+        <table name="class_sections">
+            <column name="class_id">TWO02</column>
+            <column name="class">02</column>
+            <column name="section">B</column>
+            <column name="room">2002</column>
+            <column name="teacher">Sanjana Islam</column>
+            <column name="teacher_phone">12345678901</column>
+            <column name="teacher_email">sanjana@gmail.com</column>
+        </table>
+        <table name="class_sections">
+            <column name="class_id">TWO03</column>
+            <column name="class">02</column>
+            <column name="section">C</column>
+            <column name="room">2003</column>
+            <column name="teacher">Fahim Ahmmed</column>
+            <column name="teacher_phone">78965432110</column>
+            <column name="teacher_email">fahimahmed@gmail.com</column>
+        </table>
+        <!-- Table notices -->
+        <table name="notices">
+            <column name="notice_id">N01</column>
+            <column name="notice_title">Notice for Document Submission</column>
+            <column name="recipient">student</column>
+            <column name="date">2022-03-08</column>
+            <column name="notice">This is to notify students to submit their documents by March 15, 2022.</column>
+        </table>
+        <table name="notices">
+            <column name="notice_id">N02</column>
+            <column name="notice_title">Student ID distribution</column>
+            <column name="recipient">student</column>
+            <column name="date">2022-01-03</column>
+            <column name="notice">Students who didn’t receive their student ID yet are requested to contact the information office.</column>
+        </table>
+        <table name="notices">
+            <column name="notice_id">N03</column>
+            <column name="notice_title">Deadline for Clearing Tuition Fees</column>
+            <column name="recipient">student</column>
+            <column name="date">2021-11-24</column>
+            <column name="notice">To whomever applicable, students are advised to clear their Tuition Fees by Tuesday, March 10, 2022.</column>
+        </table>
+        <table name="notices">
+            <column name="notice_id">N04</column>
+            <column name="notice_title">AIUB Premier League 2022 (APL-T10)</column>
+            <column name="recipient">everyone</column>
+            <column name="date">2022-03-10</column>
+            <column name="notice">Students who are interested to participate in the APL T10 Cricket Tournament, 2022 are requested to register their name at the Office of Sports within 14th March 2022 for the selection session.</column>
+        </table>
+        <table name="notices">
+            <column name="notice_id">N05</column>
+            <column name="notice_title">Holiday due to Independence Day</column>
+            <column name="recipient">everyone</column>
+            <column name="date">2022-03-23</column>
+            <column name="notice">It is to notify to all concerned that the University would remain closed on Saturday , March 26th, 2022, due to Independence Day of Bangladesh.</column>
+        </table>
+        <!-- Table profile_details -->
+        <table name="profile_details">
+            <column name="username">abc</column>
+            <column name="file_name">Screenshot (51).png</column>
+        </table>
+        <table name="profile_details">
+            <column name="username">admin</column>
+            <column name="file_name">aaIcon.png</column>
+        </table>
+        <table name="profile_details">
+            <column name="username">MdRasen</column>
+            <column name="file_name">aIcon.png</column>
+        </table>
+        <table name="profile_details">
+            <column name="username">MdRasen9</column>
+            <column name="file_name">mdrasen9</column>
+        </table>
+        <!-- Table users -->
+        <table name="users">
+            <column name="users">admin</column>
+            <column name="username">abc</column>
+            <column name="name">abc xyz</column>
+            <column name="email">abc@gmail.com</column>
+            <column name="phone">78965432110</column>
+            <column name="dob">2022-03-16</column>
+            <column name="gender">male</column>
+            <column name="address">Puran Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">admin</column>
+            <column name="username">admin</column>
+            <column name="name">admin</column>
+            <column name="email">admin@gmail.com</column>
+            <column name="phone">01234567890</column>
+            <column name="dob">2022-03-21</column>
+            <column name="gender">male</column>
+            <column name="address">Romna, Dhaka</column>
+            <column name="password">admin</column>
+            <column name="cpassword">admin</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">arbho420</column>
+            <column name="name">Arbho Ahmed</column>
+            <column name="email">arbho@gmail.com</column>
+            <column name="phone">45678912301</column>
+            <column name="dob">2009-08-18</column>
+            <column name="gender">male</column>
+            <column name="address">Dhanmondi, Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">arif420</column>
+            <column name="name">Arif Sadi</column>
+            <column name="email">sadi420@gmail.com</column>
+            <column name="phone">78965432110</column>
+            <column name="dob">2022-03-09</column>
+            <column name="gender">male</column>
+            <column name="address">Puran Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">admin</column>
+            <column name="username">ariya</column>
+            <column name="name">Ariya Jahan</column>
+            <column name="email">ariya@gmail.com</column>
+            <column name="phone">78965432110</column>
+            <column name="dob">2016-02-08</column>
+            <column name="gender">male</column>
+            <column name="address">Mohakhali, Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">teacher</column>
+            <column name="username">Fahim</column>
+            <column name="name">Fahim Mojummder</column>
+            <column name="email">fahim@gmail.com</column>
+            <column name="phone">98765432102</column>
+            <column name="dob">2016-03-02</column>
+            <column name="gender">male</column>
+            <column name="address">Rampura</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">teacher</column>
+            <column name="username">Fahima</column>
+            <column name="name">Fahima Ahmed</column>
+            <column name="email">fahima@gmail.com</column>
+            <column name="phone">96385274121</column>
+            <column name="dob">2022-03-08</column>
+            <column name="gender">female</column>
+            <column name="address">Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">hima9</column>
+            <column name="name">Al Hima</column>
+            <column name="email">hima9@gmail.cm</column>
+            <column name="phone">52857441966</column>
+            <column name="dob">2022-03-08</column>
+            <column name="gender">female</column>
+            <column name="address">Basundhara</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">IshikaJahan</column>
+            <column name="name">Ishika Jahan</column>
+            <column name="email">ishika@gmail.com</column>
+            <column name="phone">12345678901</column>
+            <column name="dob">2014-03-15</column>
+            <column name="gender">female</column>
+            <column name="address">Puran Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">isratkhan</column>
+            <column name="name">Israt Binte Khan</column>
+            <column name="email">israt@gmail.com</column>
+            <column name="phone">45657898123</column>
+            <column name="dob">2008-01-11</column>
+            <column name="gender">female</column>
+            <column name="address">Romna, Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">admin</column>
+            <column name="username">MdRasen</column>
+            <column name="name">Md Rasen</column>
+            <column name="email">aamin.hossen99@gmail.com</column>
+            <column name="phone">85967414254</column>
+            <column name="dob">2022-03-01</column>
+            <column name="gender">male</column>
+            <column name="address">Romna</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">natasha45</column>
+            <column name="name">Natasha Rahmann</column>
+            <column name="email">natasha@gmail.com</column>
+            <column name="phone">85259636741</column>
+            <column name="dob">2009-05-13</column>
+            <column name="gender">female</column>
+            <column name="address">Uttara, Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">raadrahman</column>
+            <column name="name">Raad Rahman</column>
+            <column name="email">raad@gmail.com</column>
+            <column name="phone">98765432101</column>
+            <column name="dob">2022-03-01</column>
+            <column name="gender">male</column>
+            <column name="address">Uttara, Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">rafy6</column>
+            <column name="name">Al Rafy</column>
+            <column name="email">rafy@gmail.com</column>
+            <column name="phone">45678912301</column>
+            <column name="dob">2022-03-08</column>
+            <column name="gender">male</column>
+            <column name="address">Komolapur, Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">teacher</column>
+            <column name="username">sanjida</column>
+            <column name="name">Sanjida Islam</column>
+            <column name="email">sanjida4@gmail.com</column>
+            <column name="phone">52634174859</column>
+            <column name="dob">1996-03-08</column>
+            <column name="gender">female</column>
+            <column name="address">Badda, Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">student</column>
+            <column name="name">student</column>
+            <column name="email">student@gmail.com</column>
+            <column name="phone">01234567890</column>
+            <column name="dob">2022-03-07</column>
+            <column name="gender">male</column>
+            <column name="address">Dhaka, Bangladesh</column>
+            <column name="password">student</column>
+            <column name="cpassword">student</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">student1</column>
+            <column name="name">Student1</column>
+            <column name="email">student1@gmail.com</column>
+            <column name="phone">12345678901</column>
+            <column name="dob">2019-04-05</column>
+            <column name="gender">male</column>
+            <column name="address">Uttara, Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">student2</column>
+            <column name="name">Student2</column>
+            <column name="email">student2@gmail.com</column>
+            <column name="phone">12345678910</column>
+            <column name="dob">2022-01-13</column>
+            <column name="gender">female</column>
+            <column name="address">Romna</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">student3</column>
+            <column name="name">Student3</column>
+            <column name="email">student3@gmail.com</column>
+            <column name="phone">12345678901</column>
+            <column name="dob">2016-04-04</column>
+            <column name="gender">female</column>
+            <column name="address">Puran Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">unverified</column>
+        </table>
+        <table name="users">
+            <column name="users">student</column>
+            <column name="username">student4</column>
+            <column name="name">Student4</column>
+            <column name="email">student4@gmail.com</column>
+            <column name="phone">78965432110</column>
+            <column name="dob">2016-02-09</column>
+            <column name="gender">female</column>
+            <column name="address">Uttara, Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">unverified</column>
+        </table>
+        <table name="users">
+            <column name="users">teacher</column>
+            <column name="username">teacher</column>
+            <column name="name">teacher</column>
+            <column name="email">teacher@gmail.com</column>
+            <column name="phone">01234567890</column>
+            <column name="dob">1998-03-02</column>
+            <column name="gender">male</column>
+            <column name="address">Romna, Dhaka</column>
+            <column name="password">teacher</column>
+            <column name="cpassword">teacher</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">teacher</column>
+            <column name="username">teacher1</column>
+            <column name="name">Teacher1</column>
+            <column name="email">teacher1@gmail.com</column>
+            <column name="phone">85967414254</column>
+            <column name="dob">2016-04-04</column>
+            <column name="gender">female</column>
+            <column name="address">Puran Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">teacher</column>
+            <column name="username">teacher2</column>
+            <column name="name">Teacher2</column>
+            <column name="email">teacher2@gmail.com</column>
+            <column name="phone">96385274120</column>
+            <column name="dob">2008-04-04</column>
+            <column name="gender">male</column>
+            <column name="address">Rampura</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">teacher</column>
+            <column name="username">teacher3</column>
+            <column name="name">Teacher3</column>
+            <column name="email">teacher3@gmail.com</column>
+            <column name="phone">12345678910</column>
+            <column name="dob">2012-04-05</column>
+            <column name="gender">female</column>
+            <column name="address">Puran Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">unverified</column>
+        </table>
+        <table name="users">
+            <column name="users">teacher</column>
+            <column name="username">teacher4</column>
+            <column name="name">Teacher4</column>
+            <column name="email">teacher4@gmail.com</column>
+            <column name="phone">96385274120</column>
+            <column name="dob">2012-12-04</column>
+            <column name="gender">male</column>
+            <column name="address">Romna</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">unverified</column>
+        </table>
+        <table name="users">
+            <column name="users">teacher</column>
+            <column name="username">tishajaman</column>
+            <column name="name">Tisha Jaman</column>
+            <column name="email">tisha43@gmail.com</column>
+            <column name="phone">12345678901</column>
+            <column name="dob">2005-01-05</column>
+            <column name="gender">female</column>
+            <column name="address">Uttara, Dhaka</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+        <table name="users">
+            <column name="users">teacher</column>
+            <column name="username">xyz</column>
+            <column name="name">XYZ</column>
+            <column name="email">xyz@gmail.com</column>
+            <column name="phone">96385274120</column>
+            <column name="dob">2006-11-28</column>
+            <column name="gender">male</column>
+            <column name="address">Romna</column>
+            <column name="password">123</column>
+            <column name="cpassword">123</column>
+            <column name="status">verified</column>
+        </table>
+    </database>
+</pma_xml_export>
